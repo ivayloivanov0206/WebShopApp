@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 using System;
 using System.Collections.Generic;
@@ -8,20 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebShopApp.Infrastructure.Data.Domain
+namespace WebShopApp.Infrastrucutre.Data.Domain
 {
-    public class ApplicationUser : IdentityUser
+    public class ApplicationUser:IdentityUser
     {
         [Required]
         [MaxLength(30)]
         public string FirstName { get; set; } = null!;
-
         [Required]
         [MaxLength(30)]
         public string LastName { get; set; } = null!;
-
         [Required]
         [MaxLength(50)]
-        public string Address { get; set; } = null!;
+        public string Adress { get; set; } = null!;
     }
 }
