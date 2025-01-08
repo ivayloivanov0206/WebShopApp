@@ -113,5 +113,7 @@ namespace WebShopApp.Infrastrucutre.Data.Infrastructure
             });
             dataBrand.SaveChanges();
         }
+
+
     }
 }

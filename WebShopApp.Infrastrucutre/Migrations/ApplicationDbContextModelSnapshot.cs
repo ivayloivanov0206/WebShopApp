@@ -239,7 +239,7 @@ namespace WebShopApp.Infrastrucutre.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("WebShopApp.Infrastrucutre.Data.Domain.Brand", b =>
+            modelBuilder.Entity("WebShopApp.Infrastrucutre.Data.Domain.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -427,7 +427,7 @@ namespace WebShopApp.Infrastrucutre.Migrations
 
             modelBuilder.Entity("WebShopApp.Infrastrucutre.Data.Domain.Product", b =>
                 {
-                    b.HasOne("WebShopApp.Infrastrucutre.Data.Domain.Brand", "Brand")
+                    b.HasOne("WebShopApp.Infrastrucutre.Data.Domain.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("BrandId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -439,12 +439,12 @@ namespace WebShopApp.Infrastrucutre.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Brand");
+                    b.Navigation("Category");
 
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("WebShopApp.Infrastrucutre.Data.Domain.Brand", b =>
+            modelBuilder.Entity("WebShopApp.Infrastrucutre.Data.Domain.Category", b =>
                 {
                     b.Navigation("Products");
                 });
