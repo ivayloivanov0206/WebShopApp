@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using WebShopApp.Core.Contracts;
+
 using WebShopApp.Data;
 using WebShopApp.Infrastrucutre.Data.Domain;
 
@@ -34,11 +34,13 @@ namespace WebShopApp.Core.Services
 
             _context.Products.Add(item);
             return _context.SaveChanges() != 0;
+
         }
 
-        public Product GetProductsById(int productId)
+        public Product GetProductById(int productId)
         {
             return _context.Products.Find(productId);
+
         }
 
         public List<Product> GetProducts()
@@ -47,40 +49,43 @@ namespace WebShopApp.Core.Services
             return products;
         }
 
+
         public List<Product> GetProducts(string searchStringCategoryName, string searchStringBrandName)
         {
             List<Product> products = _context.Products.ToList();
             if (!String.IsNullOrEmpty(searchStringCategoryName) && !String.IsNullOrEmpty(searchStringBrandName))
             {
-                products = products.Where(x => x.Category.CategoryName.ToLower().Contains
-                (searchStringCategoryName.ToLower()) && x.Brand.BrandName.ToLower().Contains(searchStringBrandName.ToLower())).ToList();
+                products = products.Where(x => x.Category.CategoryName.ToLower().Contains(searchStringCategoryName.ToLower())
+                && x.Brand.BrandName.ToLower().Contains(searchStringBrandName.ToLower())).ToList();
             }
             else if (!String.IsNullOrEmpty(searchStringCategoryName))
             {
-                products = products.Where(x => x.Category.CategoryName.ToLower().Contains
-                (searchStringCategoryName.ToLower())).ToList();
+                products = products.Where(x => x.Category.CategoryName.ToLower().Contains(searchStringCategoryName.ToLower())).ToList();
             }
             else if (!String.IsNullOrEmpty(searchStringBrandName))
             {
                 products = products.Where(x => x.Brand.BrandName.ToLower().Contains(searchStringBrandName.ToLower())).ToList();
             }
             return products;
+
         }
 
         public bool RemoveById(int productId)
         {
-            var product = GetProductsById(productId);
+            var product = GetProductById(productId);
             if (product == default(Product))
             {
                 return false;
             }
             _context.Remove(product);
             return _context.SaveChanges() != 0;
+
         }
 
-        public bool Update(int productId, string name, int brandId, int categoryId, string picture, int quantity, decimal price, decimal discount)
+        public bool Update(int productId, string name, int brandId, int categoryId, string picture,
+            int quantity, decimal price, decimal discount)
         {
-            var product = GetProductsById(productId);
+            var product = GetProductById(productId);
             if (product == default(Product))
             {
                 return false;
@@ -99,6 +104,7 @@ namespace WebShopApp.Core.Services
             product.Discount = discount;
             _context.Update(product);
             return _context.SaveChanges() != 0;
+
         }
     }
 }

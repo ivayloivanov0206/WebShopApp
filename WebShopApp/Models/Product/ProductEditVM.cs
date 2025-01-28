@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
 using WebShopApp.Models.Brand;
 using WebShopApp.Models.Category;
 
@@ -7,6 +6,8 @@ namespace WebShopApp.Models.Product
 {
     public class ProductEditVM
     {
+
+
         [Key]
         public int Id { get; set; }
 

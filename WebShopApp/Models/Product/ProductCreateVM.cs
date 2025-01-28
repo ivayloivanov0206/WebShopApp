@@ -7,6 +7,7 @@ namespace WebShopApp.Models.Product
 {
     public class ProductCreateVM
     {
+
         [Key]
         public int Id { get; set; }
 
@@ -38,4 +39,4 @@ namespace WebShopApp.Models.Product
         [Display(Name = "Discount")]
         public decimal Discount { get; set; }
     }
-}
+}   

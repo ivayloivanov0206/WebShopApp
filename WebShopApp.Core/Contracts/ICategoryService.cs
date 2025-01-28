@@ -11,7 +11,7 @@ namespace WebShopApp.Core.Contracts
     public interface ICategoryService
     {
         List<Category> GetCategories();
-        Category GetCategpryById(int categoryId);
+        Category GetCategoryById(int categoryId);
         List<Product> GetProductByCategory(int categoryId);
     }
 }

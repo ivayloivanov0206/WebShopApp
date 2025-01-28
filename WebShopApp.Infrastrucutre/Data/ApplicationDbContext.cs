@@ -16,9 +16,9 @@ namespace WebShopApp.Data
             this.Database.EnsureCreated();  
         }
        
-        public DbSet<Brand> Brands { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Brand> Brands { get; set; } = null!;
+        public DbSet<Order> Orders { get; set; } = null!;
+        public DbSet<Category> Categories { get; set; } = null!;
+        public DbSet<Product> Products { get; set; } = null!;
     }
 }

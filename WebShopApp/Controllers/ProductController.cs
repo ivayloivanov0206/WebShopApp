@@ -10,18 +10,17 @@ using WebShopApp.Models.Product;
 
 namespace WebShopApp.Controllers
 {
-    [Authorize(Roles = "Administrator")]
+    [Authorize(Roles ="Administrator")]
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
         private readonly ICategoryService _categoryService;
         private readonly IBrandService _brandService;
-
         public ProductController(IProductService productService, ICategoryService categoryService, IBrandService brandService)
         {
-            this._productService = productService;
-            this._categoryService = categoryService;
-            this._brandService = brandService;
+            _productService = productService;
+            _categoryService = categoryService;
+            _brandService = brandService;
         }
 
         // GET: ProductController
@@ -29,32 +28,36 @@ namespace WebShopApp.Controllers
         public ActionResult Index(string searchStringCategoryName, string searchStringBrandName)
         {
             List<ProductIndexVM> products = _productService.GetProducts(searchStringCategoryName, searchStringBrandName)
-                .Select(product => new ProductIndexVM
-                {
-                    Id = product.Id,
-                    ProductName = product.ProductName,
-                    BrandId = product.BrandId,
-                    BrandName = product.Brand.BrandName,
-                    CategoryId = product.CategoryId,
-                    CategoryName = product.Category.CategoryName,
-                    Picture = product.Picture,
-                    Quantity = product.Quantity,
-                    Price = product.Price,
-                    Discount = product.Discount
-                }).ToList();
+            .Select(product => new ProductIndexVM
+            {
+                Id = product.Id,
+                ProductName = product.ProductName,
+                BrandId = product.BrandId,
+                BrandName = product.Brand.BrandName,
+                CategoryId = product.CategoryId,
+                CategoryName = product.Category.CategoryName,
+                Picture = product.Picture,
+                Quantity = product.Quantity,
+                Price = product.Price,
+                Discount = product.Discount
+
+            }).ToList();
             return this.View(products);
+
         }
 
-        // GET: ProductController/Details/5
         [AllowAnonymous]
+
+        // GET: ProductController/Details/5
         public ActionResult Details(int id)
         {
-            Product item = _productService.GetProductsById(id);
+
+            Product item = _productService.GetProductById(id);
             if (item == null)
             {
                 return NotFound();
             }
-            ProductDetailsVM product = new ProductDetailsVM()
+            ProductDetailVM product = new ProductDetailVM()
             {
                 Id = item.Id,
                 ProductName = item.ProductName,
@@ -66,10 +69,17 @@ namespace WebShopApp.Controllers
                 Quantity = item.Quantity,
                 Price = item.Price,
                 Discount = item.Discount
-            };
-            return View(product);
-        }
 
+
+            };
+            return this.View(product);
+           
+
+
+
+        }
+           
+        
         // GET: ProductController/Create
         public ActionResult Create()
         {
@@ -81,11 +91,11 @@ namespace WebShopApp.Controllers
                     Name = x.BrandName
                 }).ToList();
             product.Categories = _categoryService.GetCategories()
-                .Select(x => new CategoryPairVM()
-                {
-                    Id = x.Id,
-                    Name = x.CategoryName
-                }).ToList();
+               .Select(x => new CategoryPairVM()
+               {
+                   Id = x.Id,
+                   Name = x.CategoryName
+               }).ToList();
             return View(product);
         }
 
@@ -97,8 +107,8 @@ namespace WebShopApp.Controllers
             if (ModelState.IsValid)
             {
                 var createdId = _productService.Create(product.ProductName, product.BrandId,
-                    product.CategoryId, product.Picture,
-                    product.Quantity, product.Price, product.Discount);
+                product.CategoryId, product.Picture,
+                product.Quantity, product.Price, product.Discount);
                 if (createdId)
                 {
                     return RedirectToAction(nameof(Index));
@@ -111,41 +121,33 @@ namespace WebShopApp.Controllers
         // GET: ProductController/Edit/5
         public ActionResult Edit(int id)
         {
-            Product product = _productService.GetProductsById(id);
+            Product product = _productService.GetProductById(id);
             if (product == null)
             {
                 return NotFound();
             }
-
-            ProductEditVM updatedProduct = new ProductEditVM()
+            ProductEditVM updateProduct = new ProductEditVM()
             {
-                Id = product.Id,
-                ProductName = product.ProductName,
-                BrandId = product.BrandId,
-                //BrandName  = product.Brand.BrandName,
-                CategoryId = product.CategoryId,
-                //CategoryName = product.Category.CategoryName,
-                Picture = product.Picture,
-                Quantity = product.Quantity,
-                Price = product.Price,
-                Discount = product.Discount
+              
+
+
             };
-            updatedProduct.Brands = _brandService.GetBrands()
+            updateProduct.Brands = _brandService.GetBrands()
                 .Select(b => new BrandPairVM()
                 {
                     Id = b.Id,
                     Name = b.BrandName
-                })
-                .ToList();
-
-            updatedProduct.Categories = _categoryService.GetCategories()
+                }).ToList();
+            updateProduct.Categories = _categoryService.GetCategories()
                 .Select(c => new CategoryPairVM()
                 {
                     Id = c.Id,
                     Name = c.CategoryName
-                })
-                .ToList();
-            return View(updatedProduct);
+                }).ToList();
+            return View(updateProduct);
+
+
+
         }
 
         // POST: ProductController/Edit/5
@@ -153,25 +155,24 @@ namespace WebShopApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, ProductEditVM product)
         {
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
+                var updated = _productService.Update(id, product.ProductName, product.BrandId, product.CategoryId,
+                    product.Picture, product.Quantity, product.Price, product.Discount);
+                if (updated)
                 {
-                    var updated = _productService.Update(id, product.ProductName, product.BrandId,
-                                                        product.CategoryId, product.Picture,
-                                                        product.Quantity, product.Price, product.Discount);
-                    if (updated)
-                    {
-                        return this.RedirectToAction("Index");
-                    }
+                    return RedirectToAction("Index");
                 }
-                return View(product);
+               
             }
+            return View(product);
         }
+
 
         // GET: ProductController/Delete/5
         public ActionResult Delete(int id)
         {
-            Product item = _productService.GetProductsById(id);
+            Product item = _productService.GetProductById(id);
             if (item == null)
             {
                 return NotFound();
@@ -188,8 +189,11 @@ namespace WebShopApp.Controllers
                 Quantity = item.Quantity,
                 Price = item.Price,
                 Discount = item.Discount
+
+
             };
-            return View(product);
+            return this.View(product);
+
         }
 
         // POST: ProductController/Delete/5
@@ -198,20 +202,17 @@ namespace WebShopApp.Controllers
         public ActionResult Delete(int id, IFormCollection collection)
         {
             var deleted = _productService.RemoveById(id);
-
             if (deleted)
             {
-                return this.RedirectToAction("Success");
+                return RedirectToAction("Success");
             }
             else
             {
                 return View();
-            }
-        }
 
-        public IActionResult Success()
-        {
-            return View();
+            }
+
+            
         }
     }
 }

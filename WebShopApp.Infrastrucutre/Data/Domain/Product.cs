@@ -12,9 +12,11 @@ namespace WebShopApp.Infrastrucutre.Data.Domain
         public int Id { get; set; }
         [Required]
         [MaxLength(30)]
-        public string ProductName { get; set; }
+        public string ProductName { get; set; } = null!;
+
         [Required]
-        public int BrandId { get; set; }
+        [Display(Name ="Brand")]
+        public int BrandId {  get; set; }
         public virtual Brand Brand { get; set; } = null!;
         [Required]
         public int CategoryId {  get; set; }

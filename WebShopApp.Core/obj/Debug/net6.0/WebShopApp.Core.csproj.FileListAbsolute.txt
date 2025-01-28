@@ -1,0 +1,69 @@
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.deps.json
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.runtimeconfig.json
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.dll
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.pdb
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Infrastrucutre.dll
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Infrastrucutre.pdb
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.csproj.AssemblyReference.cache
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.AssemblyInfoInputs.cache
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.AssemblyInfo.cs
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.sourcelink.json
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopA.BE528FB2.Up2Date
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.dll
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\refint\WebShopApp.Core.dll
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.pdb
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.genruntimeconfig.cache
+C:\Users\Student\Documents\BorisM\DotProject\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\ref\WebShopApp.Core.dll
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.deps.json
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.runtimeconfig.json
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.dll
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.pdb
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Infrastrucutre.dll
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Infrastrucutre.pdb
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.csproj.AssemblyReference.cache
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.AssemblyInfoInputs.cache
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.AssemblyInfo.cs
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.csproj.CopyComplete
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.dll
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\refint\WebShopApp.Core.dll
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.pdb
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.genruntimeconfig.cache
+C:\Users\Mal\Downloads\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\ref\WebShopApp.Core.dll
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.deps.json
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.runtimeconfig.json
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.dll
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.pdb
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Infrastrucutre.dll
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Infrastrucutre.pdb
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.csproj.AssemblyReference.cache
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.AssemblyInfoInputs.cache
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.AssemblyInfo.cs
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopA.BE528FB2.Up2Date
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.dll
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\refint\WebShopApp.Core.dll
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.pdb
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.genruntimeconfig.cache
+C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Core\obj\Debug\net6.0\ref\WebShopApp.Core.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.deps.json
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.runtimeconfig.json
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Core.pdb
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.csproj.AssemblyReference.cache
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.AssemblyInfoInputs.cache
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.AssemblyInfo.cs
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\obj\Debug\net6.0\WebShopA.BE528FB2.Up2Date
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\obj\Debug\net6.0\refint\WebShopApp.Core.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.pdb
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\obj\Debug\net6.0\WebShopApp.Core.genruntimeconfig.cache
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\obj\Debug\net6.0\ref\WebShopApp.Core.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Infrastructure.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Core\bin\Debug\net6.0\WebShopApp.Infrastructure.pdb

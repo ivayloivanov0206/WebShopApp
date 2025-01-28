@@ -1,0 +1,12 @@
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\bin\Debug\net6.0\WebShopApp.Infrastructure.deps.json
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\bin\Debug\net6.0\WebShopApp.Infrastructure.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\bin\Debug\net6.0\WebShopApp.Infrastructure.pdb
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastructure.AssemblyInfo.cs
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastructure.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\refint\WebShopApp.Infrastructure.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastructure.pdb
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\ref\WebShopApp.Infrastructure.dll

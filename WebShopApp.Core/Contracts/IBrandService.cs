@@ -11,7 +11,7 @@ namespace WebShopApp.Core.Contracts
     public interface IBrandService
     {
         List<Brand> GetBrands();
-        Brand GetBrandById (int brandId);
-        List<Product> GetProductsByBrand(int brandId);
+        Brand GetBrandById(int brandId);
+        List<Product>GetProductByBrand(int brandId);
     }
 }
