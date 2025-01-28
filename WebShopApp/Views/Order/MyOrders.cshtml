@@ -2,16 +2,20 @@
 @{
 	ViewData["Title"] = "Index";
 }
-<h1>
-	My Orders
-</h1>
-<table class=" table">
+<h1>All Orders</h1>
+<table class="table">
 	<thead>
 		<tr>
 			<th>
-				@Html.DisplayNameFor(model =>model.OrderDate)
+				@Html.DisplayNameFor(model => model.OrderDate)
 			</th>
 			<th>
+				@Html.DisplayNameFor(model => model.User)
+			</th>
+			<th>
+
+				10
+
 				@Html.DisplayNameFor(model => model.Product)
 			</th>
 			<th>
@@ -31,54 +35,42 @@
 			</th>
 			<th></th>
 		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.OrderDate)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.User)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Product)
+				</td>
+				<td>
+					<img src="@Html.DisplayFor(modelItem => item.Picture)" alt="Image"
+						 width="100" />
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Quantity)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Price)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Discount)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.TotalPrice)
+				</td>
+				@*<td>
+<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+<a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+</td>*@
+			</tr>
+		}
+	</tbody>
 </table>
-<tbody>
-	@foreach (var item in Model)
-	{
-		<tr>
-			<td>
-				@Html.DisplayFor(modelItem => item.OrderDate)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.Product)
-			</td>
-			<td>
-				<img src="@Html.DisplayFor(modelItem => item.OrderDate)" alt="Image" width="100" height="100" />"
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.Quantity)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.Price)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.Discount)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.TotalPrice)
-			</td>
-			<li class=" nav-item">
-				<a class=" nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Products </a>"
-
-			</li>
-			@if (User.Identity.IsAuthenticated )
-			{
-				<li class="nav-item">
-					<a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="MyOrders">My Orders</a>
-				</li>
-			}
-				@if ((User.Identity.IsAuthenticated) && (User.IsInRole("Administrator")))
-				{
-		
-					<li class="nav-item"></li>
-					
-				}
-				 
-					
-					
-			
-		</tr>
-			
-
-	}
-</tbody>

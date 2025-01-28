@@ -96,7 +96,7 @@ namespace WebShopApp.Controllers
             {
                 return NotFound();
             }
-            var client = new ClientIndexVM
+            var client = new ClientDeleteVM
             {
                 Id = user.Id,
                 UserName = user.UserName,

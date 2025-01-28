@@ -37,6 +37,8 @@
 							<li class="nav-item">
 								<a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="MyOrders">My Orders</a>
 							</li>
+							
+							
 						}
 						@if (User.Identity.IsAuthenticated && User.IsInRole("Administrator"))
 						{
@@ -49,11 +51,15 @@
 								<ul class="dropdown-menu" aria-labelledby="dropDownMenuButton1">
 									<li><a class="dropdown-item" asp-controller="Client" asp-action="Index">Clients</a></li>
 									<li><a class="dropdown-item" asp-controller="Order" asp-action="Index">Orders</a></li>
+									<li><a class="dropdown-item" href="/Statistic/Index">Statistic</a></li>
 									
 
 								</ul>
 							</li>
 						}
+					
+						
+						
 
 					</ul>
 

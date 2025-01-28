@@ -9,7 +9,8 @@ namespace WebShopApp.Models.Order
         public DateTime OrderDate { get; set; }
         public int ProductId { get; set; }
         public string ProductName { get; set; } = null!;
-        public int QuantityInStock { get; set; }
+
+        public int QuantityInStock { get; set; } 
        
         public string? Picture { get; set; }
         [Range(1, 100)]

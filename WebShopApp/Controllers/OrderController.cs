@@ -21,7 +21,7 @@ namespace WebShopApp.Controllers
             _productService = productService;
         }
         // GET: OrderController
-        [Authorize(Roles = "Administrator")]
+        //[Authorize(Roles = "Administrator")]
         public ActionResult Index()
         {
             List<OrderIndexVM> orders = _orderService.GetOrders()
